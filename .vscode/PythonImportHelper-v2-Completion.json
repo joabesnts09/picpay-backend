@@ -164,6 +164,22 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -188,6 +204,15 @@
         "documentation": {}
     },
     {
+        "label": "users.validators",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "users.validators",
+        "description": "users.validators",
+        "detail": "users.validators",
+        "documentation": {}
+    },
+    {
         "label": "make_password",
         "importPath": "django.contrib.auth.hashers",
         "description": "django.contrib.auth.hashers",
@@ -209,6 +234,14 @@
         "description": "django.test",
         "isExtraImport": true,
         "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "ValidationError",
+        "importPath": "django.core.exceptions",
+        "description": "django.core.exceptions",
+        "isExtraImport": true,
+        "detail": "django.core.exceptions",
         "documentation": {}
     },
     {
@@ -445,6 +478,15 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "users.migrations.0003_alter_user_cpf",
+        "description": "users.migrations.0003_alter_user_cpf",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('users', '0002_alter_user_amount'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='user',\n            name='cpf',\n            field=models.CharField(max_length=14, unique=True, validators=[users.validators.validate_cpf]),\n        ),",
+        "detail": "users.migrations.0003_alter_user_cpf",
+        "documentation": {}
+    },
+    {
         "label": "create_user",
         "kind": 2,
         "importPath": "users.api",
@@ -476,7 +518,7 @@
         "kind": 6,
         "importPath": "users.models",
         "description": "users.models",
-        "peekOfCode": "class User(AbstractUser):\n    cpf = models.CharField(max_length=14, unique=True)\n    email = models.EmailField(unique=True)\n    amount = models.DecimalField(max_digits=15, decimal_places=2, default=Decimal('0.00'))\n    def save(self, *args, **kwargs):\n        self.cpf = self.cpf.replace('.', '').replace('-', '')\n        super(User, self).save(*args, **kwargs)\n    def pay(self, value: Decimal):\n        if not isinstance(value, Decimal):\n            raise TypeError('Value must be a Decimal.')",
+        "peekOfCode": "class User(AbstractUser):\n    cpf = models.CharField(max_length=14, unique=True, validators=[validate_cpf])\n    email = models.EmailField(unique=True)\n    amount = models.DecimalField(max_digits=15, decimal_places=2, default=Decimal('0.00'))\n    def save(self, *args, **kwargs):\n        self.cpf = self.cpf.replace('.', '').replace('-', '')\n        super(User, self).save(*args, **kwargs)\n    def pay(self, value: Decimal):\n        if not isinstance(value, Decimal):\n            raise TypeError('Value must be a Decimal.')",
         "detail": "users.models",
         "documentation": {}
     },
@@ -487,6 +529,15 @@
         "description": "users.schemas",
         "peekOfCode": "class UserSchema(ModelSchema):\n    class Meta:\n        model = User\n        fields = ['username','first_name', 'last_name', 'cpf', 'email', 'password']",
         "detail": "users.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "validate_cpf",
+        "kind": 2,
+        "importPath": "users.validators",
+        "description": "users.validators",
+        "peekOfCode": "def validate_cpf(value):\n    cpf = ''.join([char for char in value if char.isdigit()])\n    if len(cpf) != 11:\n        raise ValidationError('invalid CPF.')\n    if cpf == cpf[0] * 11:\n        raise ValidationError('invalid CPF.')\n    def calculate_digit(cpf, multipliers):\n        soma = sum(\n            int(cpf[i]) * multipliers[i]\n            for i in range(len(multipliers))",
+        "detail": "users.validators",
         "documentation": {}
     },
     {
