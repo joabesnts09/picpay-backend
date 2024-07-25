@@ -57,11 +57,35 @@
         "documentation": {}
     },
     {
+        "label": "AbstractUserRole",
+        "importPath": "rolepermissions.roles",
+        "description": "rolepermissions.roles",
+        "isExtraImport": true,
+        "detail": "rolepermissions.roles",
+        "documentation": {}
+    },
+    {
+        "label": "assign_role",
+        "importPath": "rolepermissions.roles",
+        "description": "rolepermissions.roles",
+        "isExtraImport": true,
+        "detail": "rolepermissions.roles",
+        "documentation": {}
+    },
+    {
         "label": "Path",
         "importPath": "pathlib",
         "description": "pathlib",
         "isExtraImport": true,
         "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
         "documentation": {}
     },
     {
@@ -213,6 +237,22 @@
         "documentation": {}
     },
     {
+        "label": "ValidationError",
+        "importPath": "django.core.exceptions",
+        "description": "django.core.exceptions",
+        "isExtraImport": true,
+        "detail": "django.core.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "ValidationError",
+        "importPath": "django.core.exceptions",
+        "description": "django.core.exceptions",
+        "isExtraImport": true,
+        "detail": "django.core.exceptions",
+        "documentation": {}
+    },
+    {
         "label": "make_password",
         "importPath": "django.contrib.auth.hashers",
         "description": "django.contrib.auth.hashers",
@@ -234,14 +274,6 @@
         "description": "django.test",
         "isExtraImport": true,
         "detail": "django.test",
-        "documentation": {}
-    },
-    {
-        "label": "ValidationError",
-        "importPath": "django.core.exceptions",
-        "description": "django.core.exceptions",
-        "isExtraImport": true,
-        "detail": "django.core.exceptions",
         "documentation": {}
     },
     {
@@ -280,6 +312,24 @@
         "documentation": {}
     },
     {
+        "label": "People",
+        "kind": 6,
+        "importPath": "core.roles",
+        "description": "core.roles",
+        "peekOfCode": "class People(AbstractUserRole):\n    available_permissions = {\n        'make_transfer': True,\n        'receive_transfer': True\n    }\nclass Company(AbstractUserRole):\n    available_permissions = {\n        'make_transfer': False,\n        'receive_transfer': True\n    }",
+        "detail": "core.roles",
+        "documentation": {}
+    },
+    {
+        "label": "Company",
+        "kind": 6,
+        "importPath": "core.roles",
+        "description": "core.roles",
+        "peekOfCode": "class Company(AbstractUserRole):\n    available_permissions = {\n        'make_transfer': False,\n        'receive_transfer': True\n    }",
+        "detail": "core.roles",
+        "documentation": {}
+    },
+    {
         "label": "BASE_DIR",
         "kind": 5,
         "importPath": "core.settings",
@@ -311,7 +361,7 @@
         "kind": 5,
         "importPath": "core.settings",
         "description": "core.settings",
-        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'users',",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rolepermissions',",
         "detail": "core.settings",
         "documentation": {}
     },
@@ -320,7 +370,7 @@
         "kind": 5,
         "importPath": "core.settings",
         "description": "core.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'users',\n]\nMIDDLEWARE = [",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rolepermissions',\n    'users',\n]",
         "detail": "core.settings",
         "documentation": {}
     },
@@ -401,7 +451,7 @@
         "kind": 5,
         "importPath": "core.settings",
         "description": "core.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = 'users.User'",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = 'users.User'\nROLEPERMISSIONS_MODULE = 'core.roles'",
         "detail": "core.settings",
         "documentation": {}
     },
@@ -410,7 +460,7 @@
         "kind": 5,
         "importPath": "core.settings",
         "description": "core.settings",
-        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = 'users.User'",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = 'users.User'\nROLEPERMISSIONS_MODULE = 'core.roles'",
         "detail": "core.settings",
         "documentation": {}
     },
@@ -419,7 +469,7 @@
         "kind": 5,
         "importPath": "core.settings",
         "description": "core.settings",
-        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = 'users.User'",
+        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = 'users.User'\nROLEPERMISSIONS_MODULE = 'core.roles'",
         "detail": "core.settings",
         "documentation": {}
     },
@@ -428,7 +478,7 @@
         "kind": 5,
         "importPath": "core.settings",
         "description": "core.settings",
-        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = 'users.User'",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = 'users.User'\nROLEPERMISSIONS_MODULE = 'core.roles'",
         "detail": "core.settings",
         "documentation": {}
     },
@@ -437,7 +487,16 @@
         "kind": 5,
         "importPath": "core.settings",
         "description": "core.settings",
-        "peekOfCode": "AUTH_USER_MODEL = 'users.User'",
+        "peekOfCode": "AUTH_USER_MODEL = 'users.User'\nROLEPERMISSIONS_MODULE = 'core.roles'",
+        "detail": "core.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROLEPERMISSIONS_MODULE",
+        "kind": 5,
+        "importPath": "core.settings",
+        "description": "core.settings",
+        "peekOfCode": "ROLEPERMISSIONS_MODULE = 'core.roles'",
         "detail": "core.settings",
         "documentation": {}
     },
@@ -491,7 +550,7 @@
         "kind": 2,
         "importPath": "users.api",
         "description": "users.api",
-        "peekOfCode": "def create_user(request, user: UserSchema):\n    user = User(**user.dict())\n    user.password = make_password(user.password)\n    user.save()\n    return {'ok': 'ok'}",
+        "peekOfCode": "def create_user(request, type_user_schema: TypeUserSchema):\n    user = User(**type_user_schema.user.dict())\n    user.password = make_password(type_user_schema.user.password)\n    try:\n        user.full_clean()\n        user.save()\n        assign_role(user, type_user_schema.type_user.type)\n    except ValidationError as err:\n        return 400, {'error': err.message_dict}\n    except Exception as err:",
         "detail": "users.api",
         "documentation": {}
     },
@@ -500,7 +559,7 @@
         "kind": 5,
         "importPath": "users.api",
         "description": "users.api",
-        "peekOfCode": "users_router = Router()\n@users_router.post('/', response={200: dict})\ndef create_user(request, user: UserSchema):\n    user = User(**user.dict())\n    user.password = make_password(user.password)\n    user.save()\n    return {'ok': 'ok'}",
+        "peekOfCode": "users_router = Router()\n@users_router.post('/', response={200: dict, 400: dict, 500: dict})\ndef create_user(request, type_user_schema: TypeUserSchema):\n    user = User(**type_user_schema.user.dict())\n    user.password = make_password(type_user_schema.user.password)\n    try:\n        user.full_clean()\n        user.save()\n        assign_role(user, type_user_schema.type_user.type)\n    except ValidationError as err:",
         "detail": "users.api",
         "documentation": {}
     },
@@ -527,7 +586,25 @@
         "kind": 6,
         "importPath": "users.schemas",
         "description": "users.schemas",
-        "peekOfCode": "class UserSchema(ModelSchema):\n    class Meta:\n        model = User\n        fields = ['username','first_name', 'last_name', 'cpf', 'email', 'password']",
+        "peekOfCode": "class UserSchema(ModelSchema):\n    class Meta:\n        model = User\n        fields = ['username','first_name', 'last_name', 'cpf', 'email', 'password']\nclass TypeSchema(Schema):\n    type: str\nclass TypeUserSchema(Schema):\n    user: UserSchema\n    type_user: TypeSchema",
+        "detail": "users.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "TypeSchema",
+        "kind": 6,
+        "importPath": "users.schemas",
+        "description": "users.schemas",
+        "peekOfCode": "class TypeSchema(Schema):\n    type: str\nclass TypeUserSchema(Schema):\n    user: UserSchema\n    type_user: TypeSchema",
+        "detail": "users.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "TypeUserSchema",
+        "kind": 6,
+        "importPath": "users.schemas",
+        "description": "users.schemas",
+        "peekOfCode": "class TypeUserSchema(Schema):\n    user: UserSchema\n    type_user: TypeSchema",
         "detail": "users.schemas",
         "documentation": {}
     },
