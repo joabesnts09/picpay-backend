@@ -1,4 +1,5 @@
 from ninja import Router
+from .models import Transaction
 from .schemas import TransactionSchema
 from django.shortcuts import get_object_or_404
 from users.models import User
@@ -27,7 +28,7 @@ def transaction(request, transaction: TransactionSchema):
         payer.pay(transaction.amount)
         payee.receive(transaction.amount)
 
-        transact = transaction(
+        transact = Transaction(
             amount=transaction.amount,
             payer_id=transaction.payer,
             payee_id=transaction.payee,
