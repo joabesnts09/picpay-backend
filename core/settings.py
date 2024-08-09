@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rolepermissions',
     'users',
+    'payments',
 ]
 
 MIDDLEWARE = [
@@ -128,3 +129,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'users.User'
 
 ROLEPERMISSIONS_MODULE = 'core.roles'
+
+AUTHORIZE_TRANSFER_ENDPOINT = 'https://run.mocky.io/v3/982c6f8f-6c14-445d-be0a-a08db4c8813b'

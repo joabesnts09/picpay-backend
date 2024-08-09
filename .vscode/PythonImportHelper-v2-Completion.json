@@ -24,6 +24,22 @@
         "documentation": {}
     },
     {
+        "label": "Router",
+        "importPath": "ninja",
+        "description": "ninja",
+        "isExtraImport": true,
+        "detail": "ninja",
+        "documentation": {}
+    },
+    {
+        "label": "ModelSchema",
+        "importPath": "ninja",
+        "description": "ninja",
+        "isExtraImport": true,
+        "detail": "ninja",
+        "documentation": {}
+    },
+    {
         "label": "Schema",
         "importPath": "ninja",
         "description": "ninja",
@@ -37,6 +53,14 @@
         "description": "users.api",
         "isExtraImport": true,
         "detail": "users.api",
+        "documentation": {}
+    },
+    {
+        "label": "payments_router",
+        "importPath": "payments.api",
+        "description": "payments.api",
+        "isExtraImport": true,
+        "detail": "payments.api",
         "documentation": {}
     },
     {
@@ -105,6 +129,14 @@
         "documentation": {}
     },
     {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
         "label": "path",
         "importPath": "django.urls",
         "description": "django.urls",
@@ -118,6 +150,223 @@
         "description": "django.core.wsgi",
         "isExtraImport": true,
         "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "Decimal",
+        "importPath": "decimal",
+        "description": "decimal",
+        "isExtraImport": true,
+        "detail": "decimal",
+        "documentation": {}
+    },
+    {
+        "label": "Decimal",
+        "importPath": "decimal",
+        "description": "decimal",
+        "isExtraImport": true,
+        "detail": "decimal",
+        "documentation": {}
+    },
+    {
+        "label": "Decimal",
+        "importPath": "decimal",
+        "description": "decimal",
+        "isExtraImport": true,
+        "detail": "decimal",
+        "documentation": {}
+    },
+    {
+        "label": "Decimal",
+        "importPath": "decimal",
+        "description": "decimal",
+        "isExtraImport": true,
+        "detail": "decimal",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "transaction",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "get_object_or_404",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "users.models",
+        "description": "users.models",
+        "isExtraImport": true,
+        "detail": "users.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "users.models",
+        "description": "users.models",
+        "isExtraImport": true,
+        "detail": "users.models",
+        "documentation": {}
+    },
+    {
+        "label": "has_permission",
+        "importPath": "rolepermissions.checkers",
+        "description": "rolepermissions.checkers",
+        "isExtraImport": true,
+        "detail": "rolepermissions.checkers",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
         "documentation": {}
     },
     {
@@ -156,78 +405,6 @@
         "documentation": {}
     },
     {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "Decimal",
-        "importPath": "decimal",
-        "description": "decimal",
-        "isExtraImport": true,
-        "detail": "decimal",
-        "documentation": {}
-    },
-    {
-        "label": "Decimal",
-        "importPath": "decimal",
-        "description": "decimal",
-        "isExtraImport": true,
-        "detail": "decimal",
-        "documentation": {}
-    },
-    {
         "label": "users.validators",
         "kind": 6,
         "isExtraImport": true,
@@ -261,30 +438,6 @@
         "documentation": {}
     },
     {
-        "label": "AppConfig",
-        "importPath": "django.apps",
-        "description": "django.apps",
-        "isExtraImport": true,
-        "detail": "django.apps",
-        "documentation": {}
-    },
-    {
-        "label": "TestCase",
-        "importPath": "django.test",
-        "description": "django.test",
-        "isExtraImport": true,
-        "detail": "django.test",
-        "documentation": {}
-    },
-    {
-        "label": "render",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
-        "isExtraImport": true,
-        "detail": "django.shortcuts",
-        "documentation": {}
-    },
-    {
         "label": "sys",
         "kind": 6,
         "isExtraImport": true,
@@ -298,7 +451,7 @@
         "kind": 5,
         "importPath": "core.api",
         "description": "core.api",
-        "peekOfCode": "api = NinjaAPI()\napi.add_router('users/', users_router)",
+        "peekOfCode": "api = NinjaAPI()\napi.add_router('users/', users_router)\napi.add_router('payments/', payments_router)",
         "detail": "core.api",
         "documentation": {}
     },
@@ -370,7 +523,7 @@
         "kind": 5,
         "importPath": "core.settings",
         "description": "core.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rolepermissions',\n    'users',\n]",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rolepermissions',\n    'users',\n    'payments',",
         "detail": "core.settings",
         "documentation": {}
     },
@@ -460,7 +613,7 @@
         "kind": 5,
         "importPath": "core.settings",
         "description": "core.settings",
-        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = 'users.User'\nROLEPERMISSIONS_MODULE = 'core.roles'",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = 'users.User'\nROLEPERMISSIONS_MODULE = 'core.roles'\nAUTHORIZE_TRANSFER_ENDPOINT = 'https://run.mocky.io/v3/982c6f8f-6c14-445d-be0a-a08db4c8813b'",
         "detail": "core.settings",
         "documentation": {}
     },
@@ -469,7 +622,7 @@
         "kind": 5,
         "importPath": "core.settings",
         "description": "core.settings",
-        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = 'users.User'\nROLEPERMISSIONS_MODULE = 'core.roles'",
+        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = 'users.User'\nROLEPERMISSIONS_MODULE = 'core.roles'\nAUTHORIZE_TRANSFER_ENDPOINT = 'https://run.mocky.io/v3/982c6f8f-6c14-445d-be0a-a08db4c8813b'",
         "detail": "core.settings",
         "documentation": {}
     },
@@ -478,7 +631,7 @@
         "kind": 5,
         "importPath": "core.settings",
         "description": "core.settings",
-        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = 'users.User'\nROLEPERMISSIONS_MODULE = 'core.roles'",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = 'users.User'\nROLEPERMISSIONS_MODULE = 'core.roles'\nAUTHORIZE_TRANSFER_ENDPOINT = 'https://run.mocky.io/v3/982c6f8f-6c14-445d-be0a-a08db4c8813b'",
         "detail": "core.settings",
         "documentation": {}
     },
@@ -487,7 +640,7 @@
         "kind": 5,
         "importPath": "core.settings",
         "description": "core.settings",
-        "peekOfCode": "AUTH_USER_MODEL = 'users.User'\nROLEPERMISSIONS_MODULE = 'core.roles'",
+        "peekOfCode": "AUTH_USER_MODEL = 'users.User'\nROLEPERMISSIONS_MODULE = 'core.roles'\nAUTHORIZE_TRANSFER_ENDPOINT = 'https://run.mocky.io/v3/982c6f8f-6c14-445d-be0a-a08db4c8813b'",
         "detail": "core.settings",
         "documentation": {}
     },
@@ -496,7 +649,16 @@
         "kind": 5,
         "importPath": "core.settings",
         "description": "core.settings",
-        "peekOfCode": "ROLEPERMISSIONS_MODULE = 'core.roles'",
+        "peekOfCode": "ROLEPERMISSIONS_MODULE = 'core.roles'\nAUTHORIZE_TRANSFER_ENDPOINT = 'https://run.mocky.io/v3/982c6f8f-6c14-445d-be0a-a08db4c8813b'",
+        "detail": "core.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTHORIZE_TRANSFER_ENDPOINT",
+        "kind": 5,
+        "importPath": "core.settings",
+        "description": "core.settings",
+        "peekOfCode": "AUTHORIZE_TRANSFER_ENDPOINT = 'https://run.mocky.io/v3/982c6f8f-6c14-445d-be0a-a08db4c8813b'",
         "detail": "core.settings",
         "documentation": {}
     },
@@ -516,6 +678,60 @@
         "description": "core.wsgi",
         "peekOfCode": "application = get_wsgi_application()",
         "detail": "core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "payments.migrations.0001_initial",
+        "description": "payments.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Transaction',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "payments.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "transaction",
+        "kind": 2,
+        "importPath": "payments.api",
+        "description": "payments.api",
+        "peekOfCode": "def transaction(request, transaction: TransactionSchema):\n    payer = get_object_or_404(User, id=transaction.payer)\n    payee = get_object_or_404(User, id=transaction.payer)\n    if payer.amount < transaction.amount:\n        return 400, {'error': 'Insufficient funds'}\n    if not has_permission(payer, 'make_transfer'):\n        return 403, {'error': 'User does not have permission to perform transfers'}\n    if not has_permission(payee, 'receive_transfer'):\n        return 403, {'error': 'User cannot receive transfers'}\n    with django_transaction.atomic():",
+        "detail": "payments.api",
+        "documentation": {}
+    },
+    {
+        "label": "payments_router",
+        "kind": 5,
+        "importPath": "payments.api",
+        "description": "payments.api",
+        "peekOfCode": "payments_router = Router()\n@payments_router.post('/', response={200: dict, 400: dict, 403: dict})\ndef transaction(request, transaction: TransactionSchema):\n    payer = get_object_or_404(User, id=transaction.payer)\n    payee = get_object_or_404(User, id=transaction.payer)\n    if payer.amount < transaction.amount:\n        return 400, {'error': 'Insufficient funds'}\n    if not has_permission(payer, 'make_transfer'):\n        return 403, {'error': 'User does not have permission to perform transfers'}\n    if not has_permission(payee, 'receive_transfer'):",
+        "detail": "payments.api",
+        "documentation": {}
+    },
+    {
+        "label": "PaymentsConfig",
+        "kind": 6,
+        "importPath": "payments.apps",
+        "description": "payments.apps",
+        "peekOfCode": "class PaymentsConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'payments'",
+        "detail": "payments.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Transaction",
+        "kind": 6,
+        "importPath": "payments.models",
+        "description": "payments.models",
+        "peekOfCode": "class Transaction(models.Model):\n    amount = models.DecimalField(\n        max_digits=15, decimal_places=2, default=Decimal('0.00'), editable=False\n    )\n    payer = models.ForeignKey(\n        User,\n        related_name='payer_transactions',\n        on_delete=models.CASCADE,\n        editable=False,\n    )",
+        "detail": "payments.models",
+        "documentation": {}
+    },
+    {
+        "label": "TransactionSchema",
+        "kind": 6,
+        "importPath": "payments.schemas",
+        "description": "payments.schemas",
+        "peekOfCode": "class TransactionSchema(ModelSchema):\n    class Meta:\n        model = Transaction\n        exclude = ['id', 'date']",
+        "detail": "payments.schemas",
         "documentation": {}
     },
     {
