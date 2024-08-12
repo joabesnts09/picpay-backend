@@ -282,6 +282,14 @@
         "documentation": {}
     },
     {
+        "label": "async_task",
+        "importPath": "django_q.tasks",
+        "description": "django_q.tasks",
+        "isExtraImport": true,
+        "detail": "django_q.tasks",
+        "documentation": {}
+    },
+    {
         "label": "AppConfig",
         "importPath": "django.apps",
         "description": "django.apps",
@@ -343,6 +351,23 @@
         "description": "django.contrib.auth.models",
         "isExtraImport": true,
         "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "warnings",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "warnings",
+        "description": "warnings",
+        "detail": "warnings",
+        "documentation": {}
+    },
+    {
+        "label": "management",
+        "importPath": "django.core",
+        "description": "django.core",
+        "isExtraImport": true,
+        "detail": "django.core",
         "documentation": {}
     },
     {
@@ -431,7 +456,7 @@
         "kind": 5,
         "importPath": "core.settings",
         "description": "core.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rolepermissions',\n    'users',\n    'payments',",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rolepermissions',\n    'django_q',\n    'users',",
         "detail": "core.settings",
         "documentation": {}
     },
@@ -530,7 +555,7 @@
         "kind": 5,
         "importPath": "core.settings",
         "description": "core.settings",
-        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = 'users.User'\nROLEPERMISSIONS_MODULE = 'core.roles'\n# AUTHORIZE_TRANSFER_ENDPOINT = 'https://run.mocky.io/v3/982c6f8f-6c14-445d-be0a-a08db4c8813b'",
+        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = 'users.User'\nROLEPERMISSIONS_MODULE = 'core.roles'\n# AUTHORIZE_TRANSFER_ENDPOINT = 'https://run.mocky.io/v3/982c6f8f-6c14-445d-be0a-a08db4c8813b'\nQ_CLUSTER = {\n    'name': 'payments_cluster',\n    'workers': 4,",
         "detail": "core.settings",
         "documentation": {}
     },
@@ -539,7 +564,7 @@
         "kind": 5,
         "importPath": "core.settings",
         "description": "core.settings",
-        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = 'users.User'\nROLEPERMISSIONS_MODULE = 'core.roles'\n# AUTHORIZE_TRANSFER_ENDPOINT = 'https://run.mocky.io/v3/982c6f8f-6c14-445d-be0a-a08db4c8813b'",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = 'users.User'\nROLEPERMISSIONS_MODULE = 'core.roles'\n# AUTHORIZE_TRANSFER_ENDPOINT = 'https://run.mocky.io/v3/982c6f8f-6c14-445d-be0a-a08db4c8813b'\nQ_CLUSTER = {\n    'name': 'payments_cluster',\n    'workers': 4,\n    'timeout': 60,\n    'retry': 300,\n    'orm': 'default',",
         "detail": "core.settings",
         "documentation": {}
     },
@@ -548,7 +573,7 @@
         "kind": 5,
         "importPath": "core.settings",
         "description": "core.settings",
-        "peekOfCode": "AUTH_USER_MODEL = 'users.User'\nROLEPERMISSIONS_MODULE = 'core.roles'\n# AUTHORIZE_TRANSFER_ENDPOINT = 'https://run.mocky.io/v3/982c6f8f-6c14-445d-be0a-a08db4c8813b'",
+        "peekOfCode": "AUTH_USER_MODEL = 'users.User'\nROLEPERMISSIONS_MODULE = 'core.roles'\n# AUTHORIZE_TRANSFER_ENDPOINT = 'https://run.mocky.io/v3/982c6f8f-6c14-445d-be0a-a08db4c8813b'\nQ_CLUSTER = {\n    'name': 'payments_cluster',\n    'workers': 4,\n    'timeout': 60,\n    'retry': 300,\n    'orm': 'default',\n    # 'worker_ttl': 60 * 60,  # 1 hour",
         "detail": "core.settings",
         "documentation": {}
     },
@@ -557,7 +582,16 @@
         "kind": 5,
         "importPath": "core.settings",
         "description": "core.settings",
-        "peekOfCode": "ROLEPERMISSIONS_MODULE = 'core.roles'\n# AUTHORIZE_TRANSFER_ENDPOINT = 'https://run.mocky.io/v3/982c6f8f-6c14-445d-be0a-a08db4c8813b'",
+        "peekOfCode": "ROLEPERMISSIONS_MODULE = 'core.roles'\n# AUTHORIZE_TRANSFER_ENDPOINT = 'https://run.mocky.io/v3/982c6f8f-6c14-445d-be0a-a08db4c8813b'\nQ_CLUSTER = {\n    'name': 'payments_cluster',\n    'workers': 4,\n    'timeout': 60,\n    'retry': 300,\n    'orm': 'default',\n    # 'worker_ttl': 60 * 60,  # 1 hour\n    # 'save_limit': 100,",
+        "detail": "core.settings",
+        "documentation": {}
+    },
+    {
+        "label": "Q_CLUSTER",
+        "kind": 5,
+        "importPath": "core.settings",
+        "description": "core.settings",
+        "peekOfCode": "Q_CLUSTER = {\n    'name': 'payments_cluster',\n    'workers': 4,\n    'timeout': 60,\n    'retry': 300,\n    'orm': 'default',\n    # 'worker_ttl': 60 * 60,  # 1 hour\n    # 'save_limit': 100,\n    # 'queue_limit': 1000,\n    # 'django_app': 'core',",
         "detail": "core.settings",
         "documentation": {}
     },
@@ -631,6 +665,15 @@
         "description": "payments.schemas",
         "peekOfCode": "class TransactionSchema(ModelSchema):\n    class Meta:\n        model = Transaction\n        exclude = ['id', 'date']",
         "detail": "payments.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "send_notification",
+        "kind": 2,
+        "importPath": "payments.tasks",
+        "description": "payments.tasks",
+        "peekOfCode": "def send_notification(payer, payee, amount):\n    print(f'{payer} sent a payment to {payee} the amount of {amount}')",
+        "detail": "payments.tasks",
         "documentation": {}
     },
     {

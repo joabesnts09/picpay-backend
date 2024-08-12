@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rolepermissions',
+    'django_q',
     'users',
     'payments',
 ]
@@ -131,3 +132,21 @@ AUTH_USER_MODEL = 'users.User'
 ROLEPERMISSIONS_MODULE = 'core.roles'
 
 # AUTHORIZE_TRANSFER_ENDPOINT = 'https://run.mocky.io/v3/982c6f8f-6c14-445d-be0a-a08db4c8813b'
+
+
+Q_CLUSTER = {
+    'name': 'payments_cluster',
+    'workers': 4,
+    'timeout': 60,
+    'retry': 300,
+    'orm': 'default',
+    # 'worker_ttl': 60 * 60,  # 1 hour
+    # 'save_limit': 100,
+    # 'queue_limit': 1000,
+    # 'django_app': 'core',
+    # 'django_db': 'default',
+    # 'results_backend': 'django_q.backends.database.DatabaseBackend',
+    # 'broker': 'redis://localhost:6379/0',
+    # 'backend': 'redis://localhost:6379/1',
+    # 'auto_delete': True,
+}

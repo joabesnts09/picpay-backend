@@ -5,6 +5,8 @@ from django.shortcuts import get_object_or_404
 from users.models import User
 from rolepermissions.checkers import has_permission
 from django.db import transaction as django_transaction
+from django_q.tasks import async_task
+from .tasks import send_notification
 
 
 payments_router = Router()
@@ -38,4 +40,6 @@ def transaction(request, transaction: TransactionSchema):
         payee.save()
         transact.save()
 
+    async_task(send_notification, payer.first_name, payee.first_name, transaction.amount)
+    
     return 200, {'transaction_id': 1}
